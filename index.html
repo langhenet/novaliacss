@@ -5,95 +5,135 @@
   <!-- Head: contiene informazioni sulla pagina, ma è invisibile -->
   <head>
     <title>
-      A Meaningful Page Title
+      Il Portfolio di Enrico Cassinelli
     </title>
     <meta name="description" content="A meaningful description" />
     <meta name="author" content="Enrico Cassinelli" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <meta http-equiv="refresh" content="4"> -->
+    <link rel="stylesheet" href="./assets/style.css">
   </head>
   <!-- Inizia il corpo "visibile" della pagina -->
   <body>
-    <div style="max-width: 600px; margin: 0 auto">
-      <h1>Hello World</h1>
-      <h2>Hello World</h2>
-      <p>lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      <p>lorem ipsum dolor sit amet lorem ipsum dolor sit <a href="https://google.com" target="_blank" title="Google">ametlorem ipsum</a> dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      <hr/>
-      <ul>
-        <li>Elenco puntato</li>
-        <li>Elenco puntato</li>
-      </ul>
-      <hr/>
-      <ol>
-        <li>Elenco numerato</li>
-        <li>Elenco numerato</li>
-      </ol>
-      <hr/>
-      <img style="max-width: 32%; padding: 15px 30px 60px;" src="./assets/tux.png" title="pinguino" alt="illustrazione di pinguino"/>
-      <img style="max-width: 32%; padding: 15px 30px 60px;" src="./assets/tux.png" title="pinguino" alt="illustrazione di pinguino"/>
-      <img style="max-width: 32%; padding: 15px 30px 60px;" src="./assets/tux.png" title="pinguino" alt="illustrazione di pinguino"/>
-      <a href="https://google.com" target="_blank">
-        <img style="max-width: 80%; padding: 5px" src="./assets/spider.jpg" />
-      </a>
-      <div style="background: red; color: white; padding:20px;">
-        <h2>Titolo della sezione</h2>
-        <p style="color: yellow">lorem ipsum dolor sit amet lorem ipsum dolor sit <a href="https://google.com" target="_blank" title="Google">ametlorem ipsum</a> dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
+    <div class="main">
+      <header class="header">
+        <div class="header-overlay"></div>
+        <div class="nav">
+          Ciccio Nizzo
+        </div>
+          <ul class="nav">
+            <li>Nav 1</li>
+            <li>Nav 2</li>
+            <li>Nav 3</li>
+          </ul>
+          <div class="info-principali">
+            <div class="contenitore-avatar">
+              <img class="avatar" src="./assets/spider.jpg" />
+            </div>
+            <h1 class="titolo">Nome e Cognome</h1>
+            <h2 class="sottotitolo">Sottotitolo / Skill / Professioni</h2>
+          </div>
+      </header>
+      <div class="inner">
+        <div class="box-big">
+          <div class="about colonne-2">
+            <h2>About</h2>
+            <p>lorem ipsum</p>
+          </div>
+          <div class="info-base colonne-2">
+            <h2>Dettagli &amp; Contatti</h2>
+            <p><strong>Età</strong> lorem ipsum</p>
+            <p><strong>Telefono</strong> lorem ipsum</p>
+            <p><strong>Email</strong> lorem ipsum</p>
+            <p><strong>Indirizzo</strong> lorem ipsum</p>
+            <p><strong>Lingue</strong> lorem ipsum</p>
+          </div>
+        </div>
+        <div class="portfolio">
+          <h2 class="titolo-sezione">Lavori</h2>
+          <div class="lavori">
+            <div class="lavoro">
+              <div class="lavoro-contenitore-immagine">
+                <img class="lavoro-immagine" src="./assets/spider.jpg">
+              </div>
+              <h3>Nome lavoro</h3>
+              <p>Didascalia</p>
+            </div>
+            <div class="lavoro">
+              <div class="lavoro-contenitore-immagine">
+                <img class="lavoro-immagine" src="./assets/spider.jpg">
+              </div>
+              <h3>Nome lavoro</h3>
+              <p>Didascalia</p>
+            </div>
+            <div class="lavoro">
+              <div class="lavoro-contenitore-immagine">
+                <img class="lavoro-immagine" src="./assets/spider.jpg">
+              </div>
+              <h3>Nome lavoro</h3>
+              <p>Didascalia</p>
+            </div>
+            <div class="lavoro">
+              <div class="lavoro-contenitore-immagine">
+                <img class="lavoro-immagine" src="./assets/spider.jpg">
+              </div>
+              <h3>Nome lavoro</h3>
+              <p>Didascalia</p>
+            </div>
+          </div>
+        </div>
+        <div class="studi">
+          <h2 class="titolo-sezione">Percorso di studi</h2>
+          <div class="percorsi">
+            <div class="percorso">
+              <div class="data-percorso">
+                <p>
+                  Maggio<br/>
+                  2005
+                </p>
+              </div>
+              <div class="contenuto-percorso">
+                <h3>Nome percorso</h3>
+                <p>Descrizione</p>
+              </div>
+            </div>
+            <div class="percorso">
+              <div class="data-percorso">
+                <p>
+                  Maggio<br/>
+                  2005
+                </p>
+              </div>
+              <div class="contenuto-percorso">
+                <h3>Nome percorso</h3>
+                <p>Descrizione</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mostre">
+          <h2 class="titolo-sezione">Mostre e pubblicazioni</h2>
+          <div class="percorso">
+            <div class="data-percorso">
+              <p>
+                Maggio<br/>
+                2005
+              </p>
+            </div>
+            <div class="contenuto-percorso">
+              <h3>Nome percorso</h3>
+              <p>Descrizione</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style="background: rgba(16, 204, 195, 0.116); padding:40px;">
-
-      </div>
-      <div style="background: rgb(1,1,1); padding:40px;">
-
-      </div>
-      <div style="background: rgba(1,1,1,0.3); padding:40px;">
-
-      </div>
-
-
-
-
-
-
-      <!-- <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 50px; padding: 5px" src="./assets/tux.png" />
-      <img style="max-width: 100%; padding: 5px" src="./assets/spider.jpg" />
-      <a href="https://google.com">
-        <img style="max-width: 100%; padding: 5px" src="./assets/spider.jpg" />
-      </a>
-      <div style="background: red; padding: 20px; color: white">
-        <h2>Titolo</h2>
-        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      </div>
-      <table border="1" width="100%">
-        <tr>
-          <td>
-            Prima cella
-          </td>
-          <td>
-            seconda cella
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Terza cella
-          </td>
-          <td>
-            quarta cella
-          </td>
-        </tr>
-      </table>
-      <p style="float: left; width: 45%; padding: 0 10px">lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      <p style="float: left; width: 45%; padding: 0 10px">lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      <div style="background: blue; padding: 20px; color: white; clear: both">
-        <h2>Titolo</h2>
-        <p>lorem ipsum dolor sit amet lorem ipsum dolor sit ametlorem ipsum dolor sit amet</p>
-      </div> -->
     </div>
+    <footer class="footer">
+      <div class="contatti">
+        <h2>Nome &amp; Cognome</h2>
+        <p>Tel | Mail | Indirizzo</p>
+        <p>social</p>
+      </div>
+    </footer>
   </body>
 </html>
