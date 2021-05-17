@@ -11,13 +11,28 @@
     <meta name="author" content="Enrico Cassinelli" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="./assets/style.css">
+    <script type="application/javascript">
+      window.addEventListener('load', function() {
+        baguetteBox.run('.galleria');
+      });
+    </script>
   </head>
   <!-- Inizia il corpo "visibile" della pagina -->
   <body>
     <div class="main">
       <header class="header">
         <div class="header-overlay"></div>
+          <nav class="navigazione-header">
+            <ul>
+              <li class="elemento-navigazione"><a href="#bio">Bio</a></li>
+              <li class="elemento-navigazione"><a href="#lavori">Lavori</a></li>
+              <li class="elemento-navigazione"><a href="#studi">Studi</a></li>
+              <li class="elemento-navigazione"><a href="#mostre">Mostre &amp; Pubblicazioni</a></li>
+            </ul>
+          </nav>
           <div class="info-principali">
             <div class="contenitore-avatar">
               <img class="avatar" src="./assets/spider.jpg" />
@@ -43,31 +58,39 @@
         </div>
         <div class="portfolio">
           <h2 class="titolo-sezione">Lavori</h2>
-          <div class="lavori">
+          <div class="lavori galleria">
             <div class="lavoro">
               <div class="contenitore-immagine-lavoro">
-                <img class="immagine-lavoro" src="./assets/spider.jpg">
+                <a data-caption="Nome Lavoro" href="./assets/spider.jpg">
+                  <img class="immagine-lavoro" src="./assets/spider.jpg">
+                </a>
               </div>
               <h3>Nome lavoro</h3>
               <p>Didascalia</p>
             </div>
             <div class="lavoro">
               <div class="contenitore-immagine-lavoro">
-                <img class="immagine-lavoro" src="./assets/spider.jpg">
+                <a data-caption="Nome Lavoro" href="./assets/spider.jpg">
+                  <img class="immagine-lavoro" src="./assets/spider.jpg">
+                </a>
               </div>
               <h3>Nome lavoro</h3>
               <p>Didascalia</p>
             </div>
             <div class="lavoro">
               <div class="contenitore-immagine-lavoro">
-                <img class="immagine-lavoro" src="./assets/spider.jpg">
+                <a data-caption="Nome Lavoro" href="./assets/spider.jpg">
+                  <img class="immagine-lavoro" src="./assets/spider.jpg">
+                </a>
               </div>
               <h3>Nome lavoro</h3>
               <p>Didascalia</p>
             </div>
             <div class="lavoro">
               <div class="contenitore-immagine-lavoro">
-                <img class="immagine-lavoro" src="./assets/100_0555.jpg">
+                <a data-caption="Nome Lavoro" href="./assets/spider.jpg">
+                  <img class="immagine-lavoro" src="./assets/spider.jpg">
+                </a>
               </div>
               <h3>Nome lavoro</h3>
               <p>Didascalia</p>
@@ -134,12 +157,16 @@
         <h2>Nome &amp; Cognome</h2>
         <p>Tel | Mail | Indirizzo</p>
         <p>
-          <svg class="social deviant" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.207 4.794l.23-.43V0H15.07l-.436.44-2.058 3.925-.646.436H4.58v5.993h4.04l.36.436-4.175 7.98-.24.43V24H8.93l.436-.44 2.07-3.925.644-.436h7.35v-5.993h-4.05l-.36-.438 4.186-7.977z"/>
-          </svg>
-          <svg class="social youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-          </svg>
+          <a href="#">
+            <svg class="social deviant" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.207 4.794l.23-.43V0H15.07l-.436.44-2.058 3.925-.646.436H4.58v5.993h4.04l.36.436-4.175 7.98-.24.43V24H8.93l.436-.44 2.07-3.925.644-.436h7.35v-5.993h-4.05l-.36-.438 4.186-7.977z"/>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="social youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
         </p>
       </div>
     </footer>

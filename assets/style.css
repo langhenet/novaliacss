@@ -46,8 +46,8 @@ h4 {
   background-repeat: none;
   background-size: cover;
   background-position: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   position: relative;
 }
 .header-overlay {
@@ -58,6 +58,33 @@ h4 {
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 0;
+}
+
+.navigazione-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navigazione-header ul {
+  list-style: none;
+
+  /* questo lo mettiamo con media queries */
+  text-align: center;
+}
+
+.elemento-navigazione {
+  display: inline-block;
+  padding: 5px;
+  /* font-family: ; */
+  font-family: 'Source Sans Pro';
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.elemento-navigazione a {
+  color: white;
+  text-decoration: none;
 }
 .info-principali {
   max-width: 600px;
@@ -103,8 +130,12 @@ h4 {
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 10px 0 rgba(0,0,0, 0.2);
-  margin-top: 80px;
   margin-bottom: 80px;
+  margin-top: -80px;
+  z-index: 1;
+  position: relative;
+  background: white;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 650px) {
@@ -196,10 +227,29 @@ h4 {
 }
 
 .percorso {
-  display: flex;
   box-shadow: 0 5px 10px 0 rgba(0,0,0, 0.2);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   transition: all 0.5s;
+  position: relative;
+}
+
+@media screen and (min-width: 650px) {
+  .percorso {
+    display: flex;
+  }
+}
+
+.percorso:after {
+  content: "";
+  height: 80px;
+  border-left: 3px dotted darkslategray;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+}
+
+.percorso:last-child:after {
+  content: none;
 }
 
 .percorso:hover {
@@ -221,6 +271,10 @@ h4 {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+
+  /* Breakpoint */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .data-percorso p {
